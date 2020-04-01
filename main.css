@@ -20,6 +20,14 @@ h2 {
     width: 4rem;
 }
 
+#hours {
+    color: navy;
+    font-weight: 100;
+    font-size: 1.125rem;
+    list-style: none;
+    padding-left: 0;
+}
+
 #main-navbar {
     font-size: 1.5rem;
     font-weight: 100;
