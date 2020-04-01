@@ -204,7 +204,7 @@ function cancelAlert() {
 // Makes navbar no longer transparent when scrolled down
 $(function() {
     $(document).scroll(function() {
-        var $nav = $("#main-navbar");
-        $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        var nav = $("#main-navbar");
+        nav.toggleClass("scrolled", $(this).scrollTop() > nav.height());
     })
 })
