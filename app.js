@@ -124,6 +124,9 @@ var under6Prompt = new gModal({
           "<strong>Your total is:</strong><br>" +
           "$" + totalPrice + "<br>" +
           "Enjoy the flowers!";
+          if(isNaN(totalPrice)) {
+              document.getElementById("tickets").innerHTML = "You didn't put in all numbers!"
+          }
         //   totalAlert.show();
         }
       }
@@ -142,7 +145,6 @@ var cancelAlert = new gModal({
         classes: "gmodal-button-blue", // or red, green, grey
         bindKey: 13, /* Enter */
         callback: function(modal){
-          console.log("You just accepted the Alert Modal");
           modal.hide();
         }
       }
@@ -170,3 +172,11 @@ var cancelAlert = new gModal({
 //       closable: false
 //     }
 // })
+
+// Makes navbar no longer transparent when scrolled down
+$(function() {
+    $(document).scroll(function() {
+        var $nav = $("#main-navbar");
+        $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+    })
+})
