@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+    <!-- gModal CSS -->
+    <link href="gModal-master/gModal-master/dist/gModal.min.css" rel="stylesheet" />
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="main.css">
 
@@ -38,7 +41,7 @@
                     <a href="#hours-section" class="nav-link">HOURS</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">TICKETS</a>
+                    <a href="#tickets-section" class="nav-link">TICKETS</a>
                 </li>
             </ul>
         </div>
@@ -65,7 +68,7 @@
     </section>
     <!-- HEADING SECTION END -->
     <!-- ABOUT SECTION START -->
-    <section id="about-section" class="container-fluid">
+    <section id="about-section" class="container-fluid mb-3">
         <div class="row align-items-center no-gutters pt-3">
             <div class="col-md-6 text-center order-2 order-md-1">
                 <img class="img-fluid" src="imgs/rainbow.png" alt="Rainbow">
@@ -83,7 +86,7 @@
     </section>
     <!-- ABOUT SECTION END -->
     <!-- HOURS SECTION START -->
-    <section id="hours-section" class="container-fluid">
+    <section id="hours-section" class="container-fluid mb-3">
         <div class="row align-items-center no-gutters pt-3">
             <div class="col-md-6">
                 <div class="row justify-content-center">
@@ -91,7 +94,7 @@
                         <h2>HOURS</h2>
                         <img class="icon mb-2 d-none d-lg-inline" src="imgs/icon.png" alt="Flower Icon">
                         <p class="lead">If we did exist, our hours would be the following:</p>
-                        <ul id="hours">
+                        <ul class="list">
                             <li>Monday - Thursday: 10am - 6pm</li>
                             <li>Friday: 10am - 7pm</li>
                             <li>Satuday: 9am - 5pm</li>
@@ -106,6 +109,31 @@
         </div>
     </section>
     <!-- HOURS SECTION END -->
+    <!-- TICKETS SECTION START -->
+    <section id="tickets-section" class="container-fluid mb-3">
+        <div class="row align-items-center no-gutters pt-3">
+            <div class="col-md-6 text-center order-2 order-md-1">
+                <img class="img-fluid" src="imgs/rose.jpg" alt="Rose">
+            </div>
+            <div class="col-md-6 order-1 order-md-2">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8 text-center mb-3 mb-md-0">
+                        <h2>TICKETS</h2>
+                        <img class="icon mb-2 d-none d-lg-inline" src="imgs/icon.png" alt="Flower Icon">
+                        <p class="lead">Tickets Prices:</p>
+                        <ul class="list">
+                            <li>Adults (age 13-60): $10</li>
+                            <li>Seniors (60+): $9</li>
+                            <li>Youth (6-13): $5</li>
+                            <li>Under 6: FREE</li>
+                        </ul>
+                        <span id="tickets"><button id="ticket-btn" class="btn btn-info">Buy Tickets</button></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TICKETS SECTION END -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -118,6 +146,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <!-- gModal JS -->
+    <script src="gModal-master/gModal-master/dist/gModal.min.js"></script>
+    <!-- Custom JS -->
+    <script src="app.js"></script>
 </body>
 
 </html>

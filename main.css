@@ -20,12 +20,18 @@ h2 {
     width: 4rem;
 }
 
-#hours {
+.list {
     color: navy;
     font-weight: 100;
     font-size: 1.125rem;
     list-style: none;
     padding-left: 0;
+}
+
+#tickets {
+    color: navy;
+    font-weight: 100;
+    font-size: 1.125rem;
 }
 
 #main-navbar {
@@ -56,4 +62,10 @@ h2 {
     font-weight: 100;
     /* color: #ea1c2c; */
     color: rgb(241, 113, 134);;
+}
+
+@media (max-width: 576px) {
+    .gmodal-dialog {
+        margin-top: 100px;
+    }
 }
